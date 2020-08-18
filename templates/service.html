@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Hello ! Sir/Ma'am Welcome to hotel sayaji
+
+   <h1> Please Select from our services</h1>
+<form action="service" method="POST">
+{% csrf_token %}
+<input type="text" placeholder="Enter Nam of Service" name="sname"><br><br>
+<input type="text" placeholder="Charges" name="scharge"><br><br>
+<input type="text" placeholder="Description" name="sdesc"><br><br>
+
+<input type="submit" value="addservice"><br><br>
+</form>
+</body>
+</html>

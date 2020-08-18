@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{error}}<br><br>
+    <form action="home" action="POST">
+        {% csrf_token %}
+
+        <h1> WELCOME TO CELEBRATIONS!</h1>
+
+       <a href="customer" >Manage Customers</a><br><br>
+       <a href="staff"> Add staff</a><br><br>
+       <a href="category">Add category</a><br><br>
+       <a href="BookRoom">BookRoom</a><br><br>
+       <a href="addroom"> Add Room</a><br><br>
+       <a href="aservice">service</a><br><br>
+       <a href="addcustservice">Add Service For Customers</a><br><br>
+       <a href="customerview">customer list</a>
+       
+
+        </form>
+</body>
+</html>

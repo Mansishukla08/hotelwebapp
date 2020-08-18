@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Customer List</h1>
+    <table border="1">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Options</th>
+        </tr>
+        {% for items in list1 %}
+        <tr>
+            <th>{{items.id}}</th>
+            <th>{{items.name}}</th>
+            <th>{{items.email}}</th>
+            <th><a href="bill/{{items.id}}">bill</a>||<a href="delete/{{items.id}}">delete_Customer</a></th>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
